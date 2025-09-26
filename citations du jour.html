@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Citations aléatoires</title>
+  <style>
+      <audio id="musique" src="musique.mp3" preload="auto"></audio>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('image.jpg'); /* ou URL en ligne */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;  /* diminue l'opacité */
+  z-index: -1;   /* met en arrière-plan */
+}
+
+.container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.85); /* blanc semi-transparent */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  color: black; /* texte visible */
+};
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Citation du jour</h2>
+    <p id="quote">Clique sur le bouton pour une citation</p>
+    <button onclick="newQuote()">Nouvelle citation</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

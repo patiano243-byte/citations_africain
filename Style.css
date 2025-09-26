@@ -1,0 +1,52 @@
+css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.4); /* fond semi-transparent noir */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  backdrop-filter: blur(8px); /* flou derrière */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+#quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #f0a500;
+  color: #f0a500;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #f0a500;
+  color: #222;
+  box-shadow: 0 0 10px #f0a500;
+}
